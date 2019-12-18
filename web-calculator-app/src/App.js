@@ -83,7 +83,7 @@ class App extends Component {
     const { displayValue, previousValue, operation } = this.state
     let result = math.evaluate(previousValue + operation + displayValue)
 
-    if (operation ===  null) {
+    if (operation === null || operation === '=') {
       alert('Dont do that..')
       return
     }
